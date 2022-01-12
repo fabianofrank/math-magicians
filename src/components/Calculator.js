@@ -1,4 +1,6 @@
 import React from 'react';
+// import calculate from '../logic/calculate';
+// import operate from '../logic/operate';
 
 const buttons = [
   'AC', '+/-', '%', '÷',
@@ -8,32 +10,22 @@ const buttons = [
   '0', '.', '=',
 ];
 
-const BuildArray = () => {
+const Calculator = () => {
+  const clickHandler = () => {};
   const buttonsArray = [];
   buttons.forEach((button) => buttonsArray.push(
-    <button className="calc-buttons" type="button">{button}</button>,
+    <button click={clickHandler} className="calc-buttons" type="button">{button}</button>,
   ));
-  return buttonsArray;
-};
-
-class Calculator extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
-  render() {
-    return (
-      <div id="calculator">
-        <div id="calc-display">
-          <input />
-        </div>
-        <div id="calc-buttons">
-          <BuildArray />
-        </div>
+  return (
+    <div id="calculator">
+      <div id="calc-display">
+        <input />
       </div>
-    );
-  }
-}
+      <div id="calc-buttons">
+        {buttonsArray}
+      </div>
+    </div>
+  );
+};
 
 export default Calculator;
