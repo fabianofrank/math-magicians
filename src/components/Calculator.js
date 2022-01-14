@@ -1,4 +1,5 @@
 import React from 'react';
+import calculate from '../logic/calculate';
 
 const buttons = [
   'AC', '+/-', '%', '÷',
@@ -8,28 +9,38 @@ const buttons = [
   '0', '.', '=',
 ];
 
-const BuildArray = () => {
-  const buttonsArray = [];
-  buttons.forEach((button) => buttonsArray.push(
-    <button className="calc-buttons" type="button">{button}</button>,
-  ));
-  return buttonsArray;
-};
-
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    // this.handleClick = this.handleClick.bind(this);
+    this.handleEvent = this.handleEvent.bind(this);
+    this.buildArray = this.buildArray.bind(this);
+    this.state = { total: '0', next: null, operation: null };
   }
 
+  handleEvent = (e) => {
+    this.setState((previousState) => calculate(previousState, e.target.innerText));
+  }
+
+  buildArray = () => {
+    const buttonsArray = [];
+    buttons.forEach((button) => buttonsArray.push(
+      <button key={button} onClick={this.handleEvent} className="calc-buttons" type="button">{button}</button>,
+    ));
+    return buttonsArray;
+  };
+
   render() {
+    const { total, next, operation } = this.state;
     return (
       <div id="calculator">
         <div id="calc-display">
-          <input />
+          {total}
+          {operation}
+          {next}
         </div>
         <div id="calc-buttons">
-          <BuildArray />
+          {this.buildArray()}
         </div>
       </div>
     );
