@@ -16,9 +16,9 @@ const App = () => (
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="/calculator" element={<CalculatorPage />} />
-        <Route path="/quotes" element={<QuotesPage />} />
-        <Route path="/" element={<HomePage />} />
+        <Route path="math-magicians/calculator" element={<CalculatorPage />} />
+        <Route path="math-magicians/quotes" element={<QuotesPage />} />
+        <Route path="math-magicians/" element={<HomePage />} />
       </Routes>
     </div>
   </Router>
