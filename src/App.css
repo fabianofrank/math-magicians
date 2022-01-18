@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'MagicSchool';
-  src: url(../public/MagicSchoolOne.ttf);
+  src: url(../public/MagicSchoolOne.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Ovation';
-  src: url(../public/Ovation.ttf);
+  src: url(../public/Ovation.ttf) format('truetype');
 }
 
 body {

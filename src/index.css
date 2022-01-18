@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'HarryPotter';
-  src: url(../public/HarryP.ttf);
+  src: url(../public/HarryP.ttf) format('truetype');
 }
 
 * {
