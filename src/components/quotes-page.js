@@ -1,7 +1,8 @@
 import React from 'react';
+import '../App.css';
 
 const QuotesPage = () => (
-  <section>
+  <section className="quotes">
     <p>
       “Help will always be given at Hogwarts to those who ask for it”
       <br />

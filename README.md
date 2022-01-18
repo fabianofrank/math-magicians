@@ -1,11 +1,11 @@
 # Math Magicians
 
-This app is the capstone project we built at the end of our JavaScript module. It's a nostalgic interpretation of a pokedex, and we hope you enjoy it as much as we did putting it together. Go and catch 'em all!
+This is a rare calculator made with old magic from Hogwarts!
 
 
 ## Screenshot
 
-![screenshot](./src/screenshot.png)
+![screenshot](../public/calc.png)
 
 
 ## Built With
@@ -27,7 +27,7 @@ To get a local copy up and running follow the instructions.
 
 ### Setup
 
-1. Open the terminal and clone the project using `git clone git@github.com:fabianofrank/pokemon-api.git`
+1. Open the terminal and clone the project using `git clone git@github.com:fabianofrank/math-magicians.git`
 
 ### Install
 
@@ -36,10 +36,10 @@ To get a local copy up and running follow the instructions.
 
 ### Usage
 
-- Click on the heart to *Like* your favorite pokemon.
-- Click on the comment button to see more information about the pokemon and share your experiences.
-- Click on the adopt button to schedule an adoption appointment.
-- Gotta catch 'em all!
+- Click on the Home to be welcomed.
+- Click on the Calculator button to use the calculator application.
+- Click on the Quotes button to enchated by a Dumbledore's phrase.
+- Let's do Magic!
 
 ### Run tests
 

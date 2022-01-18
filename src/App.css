@@ -1,3 +1,72 @@
+@font-face {
+  font-family: 'MagicSchool';
+  src: url(../public/MagicSchoolOne.ttf);
+}
+
+@font-face {
+  font-family: 'Ovation';
+  src: url(../public/Ovation.ttf);
+}
+
+body {
+  background: #fffef0;
+}
+
 * {
   box-sizing: border-box;
+  margin: 0;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  align-items: baseline;
+  padding: 24px;
+  font-family: 'Ovation';
+  font-size: 48px;
+}
+
+h1 {
+  flex :1;
+  font-family: 'MagicSchool';
+  font-size: 64px;
+}
+
+h2 {
+  padding: 24px;
+  font-family: 'MagicSchool';
+  font-size: 64px;
+  align-self: center;
+}
+
+p {
+  padding: 24px;
+  font-family: '';
+  align-self: center;
+  font-family: 'Ovation';
+  font-size: 48px;
+}
+
+.home {
+ display: flex;
+ flex-direction: column;
+}
+
+.calc {
+  display: flex;
+  flex-direction: column;
+ }
+
+ .quotes {
+  display: flex;
+  flex-direction: column;
+ }
+
+ .nav a {
+   color: black;
+   padding: 0 10px 0 10px;
+ }
+
+ .nav a:hover {
+  color: rgb(153, 153, 19);
 }
