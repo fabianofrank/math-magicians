@@ -5,7 +5,7 @@ This is a rare calculator made with old magic from Hogwarts!
 
 ## Screenshot
 
-![screenshot](../public/calc.png)
+![screenshot](./public/calc.png)
 
 
 ## Built With
