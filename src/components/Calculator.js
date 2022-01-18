@@ -10,7 +10,7 @@ const buttons = [
 ];
 
 const Calculator = () => {
-  const [previousState, setState] = useState({});
+  const [previousState, setState] = useState({ total: 0 });
   const handleEvent = (e) => {
     setState(calculate(previousState, e.target.innerText));
   };
