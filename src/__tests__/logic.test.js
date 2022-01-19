@@ -1,14 +1,20 @@
 import calculate from '../logic/calculate';
 
 describe('Calculate test:', () => {
-  test('Expects button AC to null obj', () => {
-    expect(calculate({ total: '1', next: '0', operation: '*' }, 'AC')).toEqual(
+  let obj = { total: 0, next: null, operation: null };
+  let buttonName = null;
+
+  it('Expects button AC to null obj', () => {
+    obj = { total: '1', next: '0', operation: '*' };
+    buttonName = 'AC';
+    const result = calculate(obj, buttonName);
+    expect(result).toEqual(
       { total: null, next: null, operation: null },
     );
   });
 
-  describe('Next test', () => {
-    test('Expects next to be equal to button', () => {
+  describe('When number multiplied by 0:', () => {
+    test('Expects next to be ', () => {
       expect(calculate({ total: '1', next: '0', operation: '*' }, '0')).toEqual(
         { total: '1', next: '0', operation: '*' },
       );
