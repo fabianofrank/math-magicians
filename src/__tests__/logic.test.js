@@ -14,7 +14,7 @@ describe('Calculate test:', () => {
       );
     });
   });
-  
+
   describe('When number multiplied by 0:', () => {
     it('Expects to null obj', () => {
       obj = { total: '1', next: '0', operation: 'x' };
