@@ -17,11 +17,11 @@ describe('Calculate test:', () => {
   
   describe('When number multiplied by 0:', () => {
     it('Expects to null obj', () => {
-      obj = { total: '1', next: '0', operation: '*' };
-      buttonName = '0';
+      obj = { total: '1', next: '0', operation: 'x' };
+      buttonName = '=';
       const result = calculate(obj, buttonName);
       expect(result).toEqual(
-        { total: '1', next: '0', operation: '*' },
+        { total: '0', next: null, operation: null },
       );
     });
   });
