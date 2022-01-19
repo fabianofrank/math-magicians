@@ -1,4 +1,4 @@
-import calculate from '../src/logic/calculate';
+import calculate from '../logic/calculate';
 
 describe('Calculate test:', () => {
   test('Expects button AC to null obj', () => {

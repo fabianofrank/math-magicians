@@ -1,10 +1,10 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Calculator from '../src/components/Calculator';
-import Navbar from '../src/components/Navbar';
-import CalculatorPage from '../src/components/calculator-page';
-import HomePage from '../src/components/home-page';
-import QuotesPage from '../src/components/quotes-page';
+import Calculator from '../components/Calculator';
+import Navbar from '../components/Navbar';
+import CalculatorPage from '../components/calculator-page';
+import HomePage from '../components/home-page';
+import QuotesPage from '../components/quotes-page';
 
 it('renders correctly', () => {
   const tree = renderer
