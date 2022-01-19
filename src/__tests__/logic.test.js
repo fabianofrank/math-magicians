@@ -4,18 +4,24 @@ describe('Calculate test:', () => {
   let obj = { total: 0, next: null, operation: null };
   let buttonName = null;
 
-  it('Expects button AC to null obj', () => {
-    obj = { total: '1', next: '0', operation: '*' };
-    buttonName = 'AC';
-    const result = calculate(obj, buttonName);
-    expect(result).toEqual(
-      { total: null, next: null, operation: null },
-    );
+  describe('When button AC pressed', () => {
+    it('Expects to null obj', () => {
+      obj = { total: '1', next: '0', operation: '*' };
+      buttonName = 'AC';
+      const result = calculate(obj, buttonName);
+      expect(result).toEqual(
+        { total: null, next: null, operation: null },
+      );
+    });
   });
+  
 
   describe('When number multiplied by 0:', () => {
-    test('Expects next to be ', () => {
-      expect(calculate({ total: '1', next: '0', operation: '*' }, '0')).toEqual(
+    it('Expects to null obj', () => {
+      obj = { total: '1', next: '0', operation: '*' };
+      buttonName = '0';
+      const result = calculate(obj, buttonName);
+      expect(result).toEqual(
         { total: '1', next: '0', operation: '*' },
       );
     });
