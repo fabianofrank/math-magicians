@@ -17,8 +17,9 @@ This is a rare calculator made with old magic from Hogwarts!
 
 ## Live Demo
 
-[Live Demo Link](https://fabianofrank.github.io/math-magicians/)
-
+[GitHub Link](https://fabianofrank.github.io/math-magicians/)
+[Heroku Link](https://math-heroku.herokuapp.com/)
+[Netlify Link](https://mathemagic.netlify.app/)
 
 ## Getting Started
 
